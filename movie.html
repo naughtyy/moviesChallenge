@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="movie.css" />
+    <title>Movies Challenge</title>
+  </head>
+  <body>
+    <main class="container row mt-5 ms-4" style="height: 100vh">
+      <aside class="col-4 gap-3 p-1">
+        <button class="btn btn-outline-danger home mb-3"><h6>Home</h6></button>
+        <input class="form-control mb-3" type="text" placeholder="Search..." />
+        <div id="genres_wrapper"></div>
+      </aside>
+      <section class="col-8 row gap-3">
+        <div class="container mx-5">
+          <div class="my-3 d-flex flex-column gap-3">
+            <div id="movies_wrapper" class="row row-cols-5 gap-4"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="movie.js"></script>
+  </body>
+</html>
